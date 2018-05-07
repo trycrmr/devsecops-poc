@@ -1,0 +1,19 @@
+{
+  "name": "devsecops-poc",
+  "version": "0.1.0",
+  "description": "A proof of concept for a devsecops pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trycrmr/devsecops-poc.git"
+  },
+  "author": "trycrmr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trycrmr/devsecops-poc/issues"
+  },
+  "homepage": "https://github.com/trycrmr/devsecops-poc#readme"
+}
