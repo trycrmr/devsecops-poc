@@ -1,11 +1,17 @@
-var express = require('express')
-var app = express()
+'use strict';
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', function (req, res) {
-  res.send('hello devsecops-poc world')
-})
+const express = require('express');
 
-app.listen(3000, function() {
-  console.log(`devsecops-poc running on port 3000`);
+// Constants
+const PORT = 3000;
+const HOST = '0.0.0.0';
+const app = express();
+
+// Routes
+app.get('/', (req, res) => {
+  res.send('<h1>Hello devsecops-poc world!\n</h1>');
 });
+
+//Start
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
