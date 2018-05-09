@@ -1,5 +1,5 @@
 'use strict';
-
+console.log('testing branch rules')
 const express = require('express');
 
 // Constants
