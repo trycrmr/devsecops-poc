@@ -4,6 +4,8 @@
   "description": "A proof of concept for a devsecops pipeline",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "test"
   },
   "repository": {
