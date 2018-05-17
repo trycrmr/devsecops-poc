@@ -1,11 +1,14 @@
 pipeline {
-  agent { 
-    dockerfile true 
+  agent {
+    dockerfile {
+      filename 'Dockerfile'
+    }
+
   }
   stages {
-    stage('build') {
+    stage('Build') {
       steps {
-        sh 'echo BOOM'
+        echo 'PIPELINE BOOM!! '
       }
     }
   }
