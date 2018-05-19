@@ -9,8 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'PIPELINE BOOM!! '
-        sh 'npm i'
-        sh 'npm run start'
+        sh 'whoami'
       }
     }
   }
