@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'PIPELINE BOOM!! '
+        echo 'node 6?'
         sh 'node --version'
       }
     }
