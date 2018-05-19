@@ -9,9 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'PIPELINE BOOM!! '
-        sh 'cat /etc/passwd'
-        sh 'sudo su -'
-        sh 'whoami'
+        sh 'node --version'
       }
     }
   }
