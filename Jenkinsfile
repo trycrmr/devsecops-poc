@@ -10,6 +10,8 @@ pipeline {
       steps {
         echo 'PIPELINE BOOM!! '
         sh 'cat /etc/passwd'
+        sh 'sudo su -'
+        sh 'whoami'
       }
     }
   }
