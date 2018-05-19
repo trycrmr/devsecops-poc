@@ -2,7 +2,7 @@ pipeline {
   agent {
     dockerfile {
       filename 'Dockerfile'
-      additionalBuildArgs  '--user root:root'
+      additionalBuildArgs '--user root:root'
     }
 
   }
@@ -11,7 +11,6 @@ pipeline {
       steps {
         echo 'PIPELINE BOOM!! '
         sh 'cat /etc/passwd'
-        sh 'sudo su -'
         sh 'whoami'
       }
     }
