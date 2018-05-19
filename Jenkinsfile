@@ -9,11 +9,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'PIPELINE BOOM!! '
-        sh 'sudo npm install'
+        sh 'node --version'
       }
     }
-  }
-  environment {
-    user = 'root:root'
   }
 }
