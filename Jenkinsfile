@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'PIPELINE BOOM!! '
-        sh 'whoami'
+        sh 'cat /etc/passwd'
       }
     }
   }
