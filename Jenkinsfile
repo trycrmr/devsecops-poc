@@ -2,7 +2,7 @@ pipeline {
   agent {
     dockerfile {
       filename 'Dockerfile'
-      additionalBuildArgs  '--user root:root'
+      additionalBuildArgs  '"--user=root:root"'
     }
 
   }
