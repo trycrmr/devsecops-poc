@@ -10,8 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'PIPELINE BOOM!! '
-        sh 'cat /etc/passwd'
-        sh 'whoami'
+        sh 'sudo npm install'
       }
     }
   }
